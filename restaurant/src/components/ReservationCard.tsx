@@ -5,5 +5,5 @@ interface ReservationCardTypes {
 }
 
 export default function ReservationCard({ name }: ReservationCardTypes) {
-  return <div className="reservation-card-container">Laith Harb</div>;
+  return <div className="reservation-card-container">{name}</div>;
 }
