@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface CustomerState {
-  value: string[];
+  value: Customer[];
 }
 
 interface Customer {
