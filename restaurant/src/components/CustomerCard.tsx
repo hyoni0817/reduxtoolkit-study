@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function CustomerCard() {
+interface CustomerCardType {
+  id: string;
+  name: string;
+  food: string[];
+}
+
+export default function CustomerCard({ id, name, food }: CustomerCardType) {
   return (
     <div className="customer-food-card-container">
       <p>Selena Gomez</p>

@@ -44,7 +44,13 @@ function App() {
         </div>
         <div className="customer-food-container">
           {customers.map((customer) => {
-            return <CustomerCard />;
+            return (
+              <CustomerCard
+                id={customer.id}
+                food={customer.food}
+                name={customer.name}
+              />
+            );
           })}
         </div>
       </div>
