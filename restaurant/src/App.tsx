@@ -12,6 +12,7 @@ function App() {
   const reservations = useSelector(
     (state: RootState) => state.reservations.value
   );
+  const customers = useSelector((state: RootState) => state.customers.value);
 
   const dispatch = useDispatch();
 
