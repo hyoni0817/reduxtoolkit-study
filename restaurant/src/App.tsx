@@ -41,9 +41,11 @@ function App() {
             />
             <button onClick={handleAddReservations}>Add</button>
           </div>
-          <div className="customer-food-container">
-            <CustomerCard />
-          </div>
+        </div>
+        <div className="customer-food-container">
+          {customers.map((customer) => {
+            return <CustomerCard />;
+          })}
         </div>
       </div>
     </div>
